@@ -10,7 +10,6 @@ public class TypeConversionCastingPromotional {
         byte y = (byte) x;
         System.out.println(y);
 
-
         // promotional of data type
         byte c = 120; 
         byte d = 30;
