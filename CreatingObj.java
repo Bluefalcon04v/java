@@ -1,26 +1,20 @@
-// creating a class
-class Calculator { 
-    int a;
-    public int  sub(int a, int b){
-        return  b-a;
+// blueprint of the Object
+class Computer{
+    public void greeting(String user){ // using void because it is not returning anything
+        System.err.println("Hello "+ user);
     }
-    // writing methods
-    public int add(int num1, int num2){
-        int res  = num1 + num2;
-        System.out.println(a);
-        return res;
-    }
+
+    public int noOfDeviceConnected(){ // using int because it is returning the integer
+        return 4; 
+    }    
 }
 
+public class CreatingObj{
+    public static void main(String args[]){
+        Computer comp = new Computer(); // creating new object
+        comp.greeting("World");
 
-public class CreatingObj {
-    public static void main(String arg[]){
-        int a = 40;
-        int b = 50;
-
-        Calculator calc = new Calculator(); // defining a new Object
-        int result =  calc.add(a,b); 
-        System.err.println(calc.sub(a, b));
-        System.out.println(result);
+        int deviceConnected = comp.noOfDeviceConnected();
+        System.err.println(deviceConnected);
     }
-}
+} 
