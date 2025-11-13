@@ -14,8 +14,12 @@ public class Array {
 
 // --------------------------------- Multi dimensional array
 
-    int multi[][][] = new int[3][4][5]; 
-    System.out.println(multi[1][2].length);
+int[][] test = {
+        {1, 2, 3, 4}, 
+        {-4, -5, 6}
+    };   
+    
+    System.out.println(test.length);
 
     }
 }
